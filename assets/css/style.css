@@ -102,7 +102,7 @@ h1 {
 
 
 footer {
-  height: 380px;
+  height: 420px;
   background-color: #7af1d4;
   text-align: center;
 }
@@ -164,12 +164,17 @@ footer > p {
   align-items: center;
 }
 
+.contactarea > h1 {
+  color: #fff;
+  font-size: 30px;
+}
+
 .contactarea > input {
   width: 200px;
 }
 
 .contact {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 button {
