@@ -37,6 +37,7 @@
   color: white;
   font-size: 100px;
   opacity: 0.7;
+  text-align: center;
 }
 
 .container {
@@ -75,7 +76,7 @@
   margin: 100px auto;
 }
 
-h1 {
+.countries {
   font-size: 50px;
   font-weight: bold;
   margin-bottom: 30px;
