@@ -102,26 +102,91 @@ h1 {
 
 
 footer {
-  height: 300px;
+  height: 380px;
   background-color: #7af1d4;
   text-align: center;
 }
 
-.footer-nav {
-  padding-top: 30px;
+.footer-upper {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.footer-left {
+  margin-left: 250px;
+}
+
+.footer-right {
+  margin-right: 250px;
+}
+
+@media screen and (max-width : 960px) {
+  .footer-left {
+    margin-left: 20%;
+    margin-right: 5%;
+  }
+  .footer-right {
+    margin-right: 20%;
+    margin-left: 5%;
+  }
+}
+
+.footer-nav {
+  /* padding-top: 30px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-nav > li {
+  margin-top: 50px;
 }
 
 .footer-nav > li > a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 footer > p {
-  padding-top: 30px;
+  padding-top: 50px;
   color: white;
+}
+
+.contactarea {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactarea > input {
+  width: 200px;
+}
+
+.contact {
+  margin-top: 15px;
+}
+
+button {
+  display       : inline-block;
+  border-radius : 8%;          /* 角丸       */
+  font-size     : 12pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 10px;   /* 余白       */
+  background    : #ffffff;     /* 背景色     */
+  color         : black;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 1;           /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+}
+button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 0.9;         /* カーソル時透明度 */
 }
